@@ -1,6 +1,6 @@
-import React from 'react'
-import "../styles/TaskForm.css"
-
+import React from 'react';
+import "../styles/TaskForm.css";
+import Tag from './Tag';
 const TaskForm = () => {
   return (
     <header className='app_header'>
@@ -10,10 +10,10 @@ const TaskForm = () => {
 
             <div className='task_form_bottom_line'>
               <div>
-                <button className='tag'>HTML</button>
-                <button className='tag'>CSS</button>
-                <button className='tag'>Javascript</button>
-                <button className='tag'>React</button>
+                <Tag tagName ="HTML"/>
+                <Tag tagName ="CSS"/>
+                <Tag tagName ="JavaScript"/>
+                <Tag tagName ="React"/>
                 </div>
                 <div>
                 <select className='task_status'>
