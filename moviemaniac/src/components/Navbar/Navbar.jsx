@@ -11,11 +11,11 @@ const Navbar = () => {
         <h1>MovieManic</h1>
         <div className='navbar_links'>
           <DarkMode/>
-            <a href=''>Popular<img src= {Fire} alt="fire emoji"
+            <a href='#popular'>Popular<img src= {Fire} alt="fire emoji"
             className='navbar_emoji'/></a>
-            <a href=''>Top Rated<img src= {Star} alt="star emoji"
+            <a href='#top_rated'>Top Rated<img src= {Star} alt="star emoji"
             className='navbar_emoji'/></a>
-            <a href=''>Upcoming<img src= {Party} alt="party face emoji"
+            <a href='#upcoming'>Upcoming<img src= {Party} alt="party face emoji"
             className='navbar_emoji'/></a>
         </div>
     </nav>

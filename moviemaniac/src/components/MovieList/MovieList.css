@@ -4,10 +4,11 @@
     justify-content: space-between;
     margin-bottom: 5px;
 }
-.movie-list_hading{
+.movie_list_heading{
     
     font-size: 26px;
-    color: #ffe400;
+    color: var(--heading_color)
+    /* color: var(--heading_color) */
 }
 .movie_list_filter{
     list-style: none;

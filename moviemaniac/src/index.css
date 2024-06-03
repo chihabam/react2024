@@ -3,6 +3,23 @@
   src: url("./assets/fonts/Montserrat-VariableFont_wght.woff2");
 }
 
+:root{
+  --body_background: #101010;
+  --body_color:#fff;
+  --heading_color:#ffe400;
+  transition: all 0.3s ease-in-out;
+}
+
+[data-theme="light"]{
+  --body_background: #fff;
+  --body_color:#000;
+  --heading_color:#000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -10,8 +27,8 @@
 }
 
 body{
-  background-color: #101010;
-  color: #ffff;
+  background-color: var(--body_background);
+  color: var(--body_background);
   font-family: "Montserrat", sans-serif;
 }
 
