@@ -1,4 +1,6 @@
 import React, { useEffect,useState } from 'react'
+import _ from 'lodash'
+
 import './MovieList.css'
 import Fire from '../../assets/fire.png'
 import MovieCard from './MovieCard'
@@ -15,6 +17,13 @@ const MovieList = () => {
     useEffect(()=>{
         fetchMovies();
     }, []);
+
+    useEffect(()=>{
+        if(sort.by !== "default"){
+           const sortedMovies = _.orderBy(filterMovies,[sort.by],[sort.order])
+           setFilterMovies(sortedMovies)
+        }
+    })
 
     const handleSort=(e)=>{
         const {name,value} = e.target;
